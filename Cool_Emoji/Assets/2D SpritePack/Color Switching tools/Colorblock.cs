@@ -24,7 +24,9 @@ public class Colorblock : MonoBehaviour
         
     }
 
-     void ChangeColor(Color c) {
+    public static void ChangeColor(Color c, GameObject gb) {
+
+        Renderer rend = gb.GetComponent<Renderer>();
         rend.material.SetColor("_Color", c);
 
     }
