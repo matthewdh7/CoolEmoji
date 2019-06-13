@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Saw
   - platform
+  - Bullet
   layers:
   - Default
   - TransparentFX
