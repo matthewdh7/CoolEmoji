@@ -7,7 +7,7 @@ public class Button : MonoBehaviour
 
     public Sprite activated;
     public Sprite nonactivated;
-
+    public AudioClip ClickSound;
     // Start is called before the first frame update
     SpriteRenderer spriteRenderer;
     List<GameObject> blocks;
@@ -49,15 +49,9 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log("changed");
-            foreach (Block b in block_script)
-            {
-                b.ChangeColor(Color.red);
+        
 
-            }
-
-        }
+        
         
     }
 
@@ -65,12 +59,22 @@ public class Button : MonoBehaviour
         void OnCollisionEnter2D(Collision2D col) {
         if (col.gameObject.tag == "Bullet"){
             change();
+            AudioSource audio = gameObject.GetComponent<AudioSource>() as AudioSource;
 
+            audio.Play();
             Destroy(col.gameObject);
             foreach (Block b in block_script)
             {
-               b.ChangeColor(Color.blue);
+                if (!b.IsItOn())
+                {
+                    b.ChangeState(true);
+                    b.ChangeColor(Color.blue);
+                }
+                else {
+                    b.ChangeState(false);
+                    b.ChangeColor(Color.red);
 
+                }
             }
 
         }

@@ -9,6 +9,10 @@ public class Block : MonoBehaviour
     BoxCollider2D cd;
     Rigidbody2D rd;
 
+    public Sprite on;
+    public Sprite off;
+    SpriteRenderer spriteRenderer;
+
    public Color getColor() {
         return rend.material.GetColor("_Color");
 
@@ -19,16 +23,18 @@ public class Block : MonoBehaviour
     {
         rend=GetComponent<Renderer>();
         //  rend.material.SetColor("_Color",Color.red); 
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
         cd = gameObject.GetComponent<BoxCollider2D>() as BoxCollider2D;
         rd = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
         rd.bodyType = RigidbodyType2D.Static;
+        spriteRenderer.sprite = off;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (rend.material.GetColor("_Color").Equals(Color.blue))
+        if (spriteRenderer.sprite.Equals(on))
         {
             cd.enabled = true;
 
@@ -45,6 +51,19 @@ public class Block : MonoBehaviour
         Renderer rend = gameObject.GetComponent<Renderer>();
         rend.material.SetColor("_Color", c);
 
+    }
+
+    public bool IsItOn() {
+
+        return spriteRenderer.sprite.Equals(on);
+    }
+    public void ChangeState(bool on) {
+        if (on)
+        {
+            spriteRenderer.sprite = this.on;
+
+        }
+        else { spriteRenderer.sprite = this.off; }
     }
 
     void OnCollisionEnter2D(Collision2D col)
