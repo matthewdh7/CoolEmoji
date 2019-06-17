@@ -16,6 +16,7 @@ public class Car : MonoBehaviour
     public GameObject waypoint1;
     public GameObject waypoint2;
     public string direction;
+    public  int health;
     CapsuleCollider2D cd;
     Animator animator;
     SpriteRenderer sr;
@@ -149,9 +150,35 @@ public class Car : MonoBehaviour
                     w.completed = true;
 
                 }
+
+
+
+
             }
 
         }
 
     }
+
+    void OnCollisionEnter2D(Collision2D col) {
+
+        if (col.gameObject.tag == "Bullet")
+        {
+
+            health--;
+            if (health <= 0)
+            {
+                //do some sound and
+                Destroy(this.gameObject);
+            }
+        }
+        else if (col.gameObject.tag == "player") {
+            //do something to the main character
+
+        }
+
+
+
+    }
+
 }
