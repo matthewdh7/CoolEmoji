@@ -3,15 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD:New Unity Project/ProjectSettings/TagManager.asset
-  tags: []
-=======
   tags:
-  - Saw
-  - platform
-  - Bullet
   - invisible waypoint
->>>>>>> Level1:Cool_Emoji/ProjectSettings/TagManager.asset
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -47,14 +41,17 @@ TagManager:
   - 
   m_SortingLayers:
   - name: BG1
-    uniqueID: 2120431755
+    uniqueID: 1937652821
     locked: 0
   - name: BG2
-    uniqueID: 2221253193
+    uniqueID: 525787973
     locked: 0
   - name: BG3
-    uniqueID: 1095679557
+    uniqueID: 3044490923
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Front
+    uniqueID: 2290979911
     locked: 0
