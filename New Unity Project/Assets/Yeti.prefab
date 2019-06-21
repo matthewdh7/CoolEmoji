@@ -222,7 +222,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652800053
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 260708840949912890, guid: b9c17631251b19f44b391c30bdca2304, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -345,10 +345,10 @@ GameObject:
   - component: {fileID: 7999709770074255720}
   - component: {fileID: 7999709770074255721}
   - component: {fileID: 7999709770074255722}
+  - component: {fileID: 7999709770074255726}
   - component: {fileID: 7999709770074255723}
   - component: {fileID: 7999709770074255724}
   - component: {fileID: 7999709770074255725}
-  - component: {fileID: 7999709770074255726}
   - component: {fileID: 7999709770074255719}
   - component: {fileID: 7999709770074255718}
   m_Layer: 9
@@ -435,18 +435,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7999709770074255727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 374819bc0763e7641b59dca93d47911c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f7f4394d6e2c6b4c976c27d8234541e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 400
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
-  m_AirControl: 1
+  m_AirControl: 0
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 256
-  m_GroundCheck: {fileID: 7999709770731799240}
-  m_CeilingCheck: {fileID: 7999709768920835896}
+    m_Bits: 0
+  m_GroundCheck: {fileID: 0}
+  m_CeilingCheck: {fileID: 0}
   m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
@@ -455,20 +455,30 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   OnCrouchEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7999709770074255726}
-        m_MethodName: OnCrouching
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: PlayerMovement+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &7999709770074255726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999709770074255727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f3f7075eecd6944baaff97d9b656c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 7999709770074255722}
+  runSpeed: 40
+  animator: {fileID: 7999709770074255719}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  vecAmount: 0
+  circle: {fileID: 7999709770074255724}
+  body: {fileID: 7999709770074255725}
 --- !u!61 &7999709770074255723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -532,27 +542,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7999709770074255726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7999709770074255727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4942f51ccb706a64c8565343914d2481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 7999709770074255722}
-  runSpeed: 40
-  animator: {fileID: 7999709770074255719}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  vecAmount: 0.96
-  circle: {fileID: 7999709770074255724}
-  body: {fileID: 7999709770074255725}
 --- !u!95 &7999709770074255719
 Animator:
   serializedVersion: 3
@@ -653,7 +642,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1106497693
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8c4f0605c211d4a4e82b92938da7a16a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
