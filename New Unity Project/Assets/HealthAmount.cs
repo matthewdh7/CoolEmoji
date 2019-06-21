@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthAmount : MonoBehaviour {
     Rigidbody2D rb;
@@ -23,6 +24,9 @@ public class HealthAmount : MonoBehaviour {
             takenDamage = 0;
         }
         ////checkHealth = healthAmount;
+        if (healthAmount <= 0) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
    
     IEnumerator Wait() {
