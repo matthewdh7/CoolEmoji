@@ -57,4 +57,9 @@ public class ActualMovement : MonoBehaviour
             animator.SetBool("IsJumping", false);
         }
     }
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }
