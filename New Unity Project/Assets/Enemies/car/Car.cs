@@ -181,4 +181,9 @@ public class Car : MonoBehaviour
 
     }
 
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }
