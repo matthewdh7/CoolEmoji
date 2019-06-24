@@ -172,9 +172,9 @@ public class Car : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-        else if (col.gameObject.tag == "player") {
-            //do something to the main character
-
+        else if (col.gameObject.tag == "Player")
+        {
+            HealthAmount.takenDamage = 1f;
         }
 
 

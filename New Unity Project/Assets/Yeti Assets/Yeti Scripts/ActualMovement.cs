@@ -30,7 +30,16 @@ public class ActualMovement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        
+
+        if(transform.position.x > 205 && SceneManager.GetActiveScene().name == "Level1Edited4")
+        {
+            SceneManager.LoadScene("Level2");
+        }
+        if (transform.position.x > 225 && SceneManager.GetActiveScene().name == "Level2")
+        {
+            SceneManager.LoadScene("BossLevel");
+        }
+
         touchingGround();
         verticalVelocity = Mathf.Abs(body.velocity.y);
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
