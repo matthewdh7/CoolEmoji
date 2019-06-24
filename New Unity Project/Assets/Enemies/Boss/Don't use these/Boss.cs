@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss: MonoBehaviour
 {
@@ -63,6 +64,9 @@ public class Boss: MonoBehaviour
         {
             Instantiate(explosion,transform.position, Quaternion.identity);
             Destroy(gameObject);
+
+            SceneManager.LoadScene("TheEnd");
+
         }
 
         if (stage == 1)

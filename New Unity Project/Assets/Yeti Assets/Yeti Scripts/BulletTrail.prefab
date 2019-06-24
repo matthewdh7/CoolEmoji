@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbf4ecda1192694fbe97c4b9406d1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yeti: {fileID: 0}
+  yeti: {fileID: 4446241493881927528, guid: 79a6afaf90026714ea26653df730fe68, type: 3}
   moveSpeed: 30
 --- !u!61 &3211355486479493234
 BoxCollider2D:
