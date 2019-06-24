@@ -8,7 +8,7 @@ public class Block : MonoBehaviour
     Renderer rend;
     BoxCollider2D cd;
     Rigidbody2D rd;
-
+    public bool initialState;
     public Sprite on;
     public Sprite off;
     SpriteRenderer spriteRenderer;
@@ -27,8 +27,11 @@ public class Block : MonoBehaviour
         cd = gameObject.GetComponent<BoxCollider2D>() as BoxCollider2D;
         rd = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
         rd.bodyType = RigidbodyType2D.Static;
-        spriteRenderer.sprite = off;
-
+        if (initialState)
+        {
+            spriteRenderer.sprite = on;
+        }
+        else { spriteRenderer.sprite = off; }
     }
 
     // Update is called once per frame
