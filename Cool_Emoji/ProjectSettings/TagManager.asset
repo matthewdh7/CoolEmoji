@@ -4,7 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - bullet
+=======
+  - Saw
+  - platform
+  - Bullet
+  - invisible waypoint
+  - SunWavePoint
+  - bossprojectile
+  - Boss
+>>>>>>> Level1
   layers:
   - Default
   - TransparentFX
@@ -14,7 +24,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - waypoint
   - 
   - 
   - 

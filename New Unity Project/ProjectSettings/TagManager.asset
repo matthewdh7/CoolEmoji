@@ -9,6 +9,9 @@ TagManager:
   - bullet
   - HorizontalPlatform
   - VerticalPlatform
+  - SunWavePoint
+  - bossprojectile
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -66,4 +69,7 @@ TagManager:
     locked: 0
   - name: Arm
     uniqueID: 2733503269
+    locked: 0
+  - name: forefrunt
+    uniqueID: 3451755395
     locked: 0
