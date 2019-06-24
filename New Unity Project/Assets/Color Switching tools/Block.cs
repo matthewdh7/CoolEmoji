@@ -30,8 +30,11 @@ public class Block : MonoBehaviour
         if (initialState)
         {
             spriteRenderer.sprite = on;
+  
         }
-        else { spriteRenderer.sprite = off; }
+        else { spriteRenderer.sprite = off;
+           
+        }
     }
 
     // Update is called once per frame
@@ -64,9 +67,11 @@ public class Block : MonoBehaviour
         if (on)
         {
             spriteRenderer.sprite = this.on;
-
+            ChangeColor(Color.blue);
         }
-        else { spriteRenderer.sprite = this.off; }
+        else { spriteRenderer.sprite = this.off;
+            ChangeColor(Color.clear);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)

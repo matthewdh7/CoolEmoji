@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 96a93d84f18ba9f4ab32aee146d6b73c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7614589175694218816
+    second: Movement2_0
+  - first:
+      213: -5960798870616814996
+    second: Movement2_1
+  - first:
+      213: 7822792340630999195
+    second: Movement2_2
+  - first:
+      213: -8898954098493081450
+    second: Movement2_3
+  - first:
+      213: -5221551999535900823
+    second: Movement2_4
+  - first:
+      213: 4655598388393590034
+    second: Movement2_5
+  - first:
+      213: -203360441992766341
+    second: Movement2_6
+  - first:
+      213: -1840550727450757972
+    second: Movement2_7
+  - first:
+      213: 4147972333024955851
+    second: Movement2_8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -84,7 +111,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Movement2_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 194
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa1bd96fbdf61b4584020814b5e1b28
+      internalID: 7614589175694218816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 196
+        width: 61
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d284c93f1b3fe2d43a8b143b54949de8
+      internalID: -5960798870616814996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 195
+        width: 64
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf1c6075c0f6614286e2f471ce43be8
+      internalID: 7822792340630999195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 194
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70458805e1cea434a9439a3e88ccbc4f
+      internalID: -8898954098493081450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 91
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e2e30fa50b01c4ba9dffe7b930207a
+      internalID: -5221551999535900823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 92
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65adb37e0db9d83479667436214fc83d
+      internalID: 4655598388393590034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 96
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae352cfd403b164bad2812c0a66860f
+      internalID: -203360441992766341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 96
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f2c96a072b0214c84dcc574b1be63c
+      internalID: -1840550727450757972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Movement2_8
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 94
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ce7421f6632cc4d8e572b82bf6f885
+      internalID: 4147972333024955851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

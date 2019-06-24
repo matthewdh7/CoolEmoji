@@ -68,7 +68,7 @@ public class Button : MonoBehaviour
                 if (!b.IsItOn())
                 {
                     b.ChangeState(true);
-                    b.ChangeColor(Color.blue);
+                    b.ChangeColor(Color.red);
                 }
                 else {
                     b.ChangeState(false);

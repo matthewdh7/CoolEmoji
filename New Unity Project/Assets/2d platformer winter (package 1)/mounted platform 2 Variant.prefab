@@ -7,11 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4212706381063877782}
     m_Modifications:
-    - target: {fileID: 2356405448029574067, guid: 37a25de9c6cfbef428e457f942339ee4,
-        type: 3}
-      propertyPath: m_Name
-      value: mounted platform 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2356405448029574065, guid: 37a25de9c6cfbef428e457f942339ee4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,6 +77,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.80594176
       objectReference: {fileID: 0}
+    - target: {fileID: 2356405448029574067, guid: 37a25de9c6cfbef428e457f942339ee4,
+        type: 3}
+      propertyPath: m_Name
+      value: mounted platform 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2356405448029574066, guid: 37a25de9c6cfbef428e457f942339ee4,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -101,11 +101,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4212706381063877782}
     m_Modifications:
-    - target: {fileID: 3155267544104167257, guid: 0b1e5acaea1518f40bc77d2c1c8e62e5,
-        type: 3}
-      propertyPath: m_Name
-      value: mounted platform 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3155267544104167259, guid: 0b1e5acaea1518f40bc77d2c1c8e62e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -176,6 +171,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.874037
       objectReference: {fileID: 0}
+    - target: {fileID: 3155267544104167257, guid: 0b1e5acaea1518f40bc77d2c1c8e62e5,
+        type: 3}
+      propertyPath: m_Name
+      value: mounted platform 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3155267544104167258, guid: 0b1e5acaea1518f40bc77d2c1c8e62e5,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -198,7 +198,7 @@ PrefabInstance:
     - target: {fileID: 5947746499123146974, guid: b157d88d90e2d9642b7b0176111f11df,
         type: 3}
       propertyPath: m_Name
-      value: mounted platform 2
+      value: mounted platform 2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5947746499123146972, guid: b157d88d90e2d9642b7b0176111f11df,
         type: 3}

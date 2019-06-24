@@ -6,6 +6,9 @@ TagManager:
   tags:
   - invisible waypoint
   - Bullet
+  - bullet
+  - HorizontalPlatform
+  - VerticalPlatform
   layers:
   - Default
   - TransparentFX
@@ -54,4 +57,13 @@ TagManager:
     locked: 0
   - name: Front
     uniqueID: 2290979911
+    locked: 0
+  - name: Yeti
+    uniqueID: 1663649881
+    locked: 0
+  - name: Gun
+    uniqueID: 4160861785
+    locked: 0
+  - name: Arm
+    uniqueID: 2733503269
     locked: 0
