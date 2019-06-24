@@ -14,7 +14,10 @@ public class waveMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * movement);
+        if (introVisuals.moveWaves == true) {
+            transform.Translate(Vector2.right * movement);
+        }
+        
         
 
     }

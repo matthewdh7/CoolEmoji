@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Saw
-  - platform
+  - bullet
+  - Left
+  - HorizontalPlatform
+  - VerticalPlatform
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Yeti
   - 
   - 
   - 
@@ -42,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ammo
+    uniqueID: 2468469217
+    locked: 0
+  - name: Gun
+    uniqueID: 2642167243
+    locked: 0
+  - name: Arm
+    uniqueID: 3188469603
     locked: 0
