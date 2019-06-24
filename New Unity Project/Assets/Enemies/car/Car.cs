@@ -116,12 +116,12 @@ public class Car : MonoBehaviour
         foreach (Waypoint w in scripts) {
 
             if (!w.completed) {
-                if (w.GetX()-0.2 > carpos.x)
+                if (w.GetX()-0.1 > carpos.x)
                 {
                     gameObject.transform.position = new Vector2(carpos.x + speed * Time.deltaTime, carpos.y);
                     break;
                 }
-                else if (w.GetX()+0.2 < carpos.x)
+                else if (w.GetX()+0.1 < carpos.x)
                 {
                     gameObject.transform.position = new Vector2(carpos.x - speed * Time.deltaTime, carpos.y);
                     break;

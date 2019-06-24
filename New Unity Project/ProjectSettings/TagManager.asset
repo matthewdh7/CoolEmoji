@@ -12,6 +12,7 @@ TagManager:
   - SunWavePoint
   - bossprojectile
   - Boss
+  - spike
   layers:
   - Default
   - TransparentFX

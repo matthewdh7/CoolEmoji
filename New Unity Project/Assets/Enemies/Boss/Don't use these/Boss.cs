@@ -63,9 +63,10 @@ public class Boss: MonoBehaviour
         else if (health <= 0 )
         {
             Instantiate(explosion,transform.position, Quaternion.identity);
+            SceneManager.LoadScene("TheEnd");
             Destroy(gameObject);
 
-            SceneManager.LoadScene("TheEnd");
+            
 
         }
 

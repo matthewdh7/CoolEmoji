@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b00e652857cf248b231935eb2074c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sawSpeed: 150
+  sawSpeed: 300
   saw: {fileID: 0}
   turningSpeed: 1
   healthbar: {fileID: 0}
