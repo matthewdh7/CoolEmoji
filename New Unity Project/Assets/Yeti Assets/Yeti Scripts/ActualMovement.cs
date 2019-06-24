@@ -37,7 +37,7 @@ public class ActualMovement : MonoBehaviour
         }
         if (transform.position.x > 225 && SceneManager.GetActiveScene().name == "Level2")
         {
-            SceneManager.LoadScene("BossLevel");
+            SceneManager.LoadScene("Final Boss");
         }
 
         touchingGround();
